@@ -1,0 +1,6 @@
+<h1><%= @message.title %></h1>
+<%= @message.description %>
+
+<%= link_to "Back", root_path, class: "btn btn-default"%>
+<%= link_to "Edit Message", edit_message_path %>
+<%= link_to "Delete",message_path(@message), method: :delete, data:{confirm: "you wanna do this?"} %>
